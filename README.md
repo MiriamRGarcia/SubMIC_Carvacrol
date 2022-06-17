@@ -3,7 +3,7 @@
 
 # SubMIC_Carvacrol
 
-**SubMIC_Carvacrol:** A predictive microbiology framework to determine the effect of **Sub**inhibitory concentrations (working under the **M**inimal **I**nhibitory **C**oncentration) of **Carvacrol** on the foodborne bacterial species *Escherichia Coli* and *Bacillus Cereus*.
+**SubMIC_Carvacrol:** A predictive microbiology framework to determine the effect of **Sub**inhibitory concentrations (working under the **M**inimal **I**nhibitory **C**oncentration) of **Carvacrol** on the foodborne bacterial species *Escherichia coli* and *Bacillus cereus*.
 
 The code in the repository provides experimental data and (model-based) estimated parameters to simulate the inactivation dynamics of *Escherichia coli* and *Bacillus cereus* viable counts (CFUs/mL) under different subinhibitory concentrations of **Carvarol** (mg/mL) during a time-lapse of 48 hours. The code integrates the mathematical model introduced in the article (link al articulo) to explain the experimental data. The estimation of the model parameters to fit the data was performed using the **MATLAB** optimization toolbox **AMIGO2**, freely available at: https://sites.google.com/site/amigo2toolbox .
 
