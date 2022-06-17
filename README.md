@@ -1,5 +1,8 @@
 ![matlab version: R2019a](https://img.shields.io/badge/Matlab-R2019a-red)
 ![R version: 4.2.0](https://img.shields.io/badge/R-4.2.0-red)
+[![DOI](https://zenodo.org/badge/502868293.svg)](https://zenodo.org/badge/latestdoi/502868293)
+
+
 
 # SubMIC_Carvacrol
 
