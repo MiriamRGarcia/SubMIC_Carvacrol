@@ -6,46 +6,65 @@
 
 # SubMIC_Carvacrol
 
-**SubMIC_Carvacrol:** A predictive microbiology framework to determine the effect of **Sub**inhibitory concentrations (working under the **M**inimal **I**nhibitory **C**oncentration) of **Carvacrol** on the foodborne bacterial species *Escherichia coli* and *Bacillus cereus*. The code in the repository provides experimental data and (model-based) estimated parameters to simulate the inactivation dynamics of *Escherichia coli* and *Bacillus cereus* viable counts (log scale of CFUs/mL) under different subinhibitory concentrations of **Carvarol** (mg/mL) during a time-lapse of 48 hours. The code integrates the mathematical model introduced in the article (soon to come) to explain the experimental data. The estimation of the model parameters to fit the data was performed using the **MATLAB** optimisation toolbox **AMIGO2**, freely available at: https://sites.google.com/site/amigo2toolbox . The structural identifiability analysis of the model was performed using the **MATLAB** toolbox **STRIKE-GOLDD**, which can be downloaded at: https://github.com/afvillaverde/strike-goldd . 
+**SubMIC_Carvacrol:** A predictive microbiology framework to determine the effect of **Sub**inhibitory concentrations (working under the **M**inimal **I**nhibitory **C**oncentration) of **Carvacrol** on the foodborne bacterial species *Escherichia coli* and *Bacillus cereus*. The code in the repository provides experimental data and (model-based) estimated parameters to simulate the inactivation dynamics of *Escherichia coli* and *Bacillus cereus* viable counts (log scale of CFUs/mL) under different subinhibitory concentrations of **Carvarol** (mg/mL) during a time-lapse of 48 hours. The code integrates the mathematical model introduced in the article (soon to come) to explain the experimental data.
+
+The estimation of the model parameters to fit the experimental data was performed using the **MATLAB** optimisation toolbox **AMIGO2**, freely available at: https://sites.google.com/site/amigo2toolbox .
 
 
-The repository contains the following subfolders:
+The structural identifiability analysis of the mathematical model was performed using the **MATLAB** toolbox **STRIKE-GOLDD**, freely available at: https://github.com/afvillaverde/strike-goldd . 
+
+
+The repository **SubMIC_Carvacrol** contains the following subfolders:
 
 
 
 **Simulations:**
-Folder with the necessary files to run model simulations.
-Two codes are provided in the folder: the one titled *Carvacrol_Inhibition_of_Ecoli_Bcereus-Model&Data.m*, to be run in the commercial computing software **MATLAB**, and the other named *Carvacrol_Inhibition_of_Ecoli_Bcereus-Model&Data.R*, to be run in the free software for statistical computing **R**. The code has been kept simple so that the user can introduce different parameter values and/or experimental data to simulate the model.
+
+
+Folder with the necessary files to run model-based simulations:
+
+*- Carvacrol_Inhibition_of_Ecoli_Bcereus-Model&Data.m*: Script to run model-based simulations in the commercial computing software **MATLAB**.
+*- Carvacrol_Inhibition_of_Ecoli_Bcereus-Model&Data.R*: Script to run model-based simulations in the free software for statistical computing **R**.
+
+
+The simulation code has been kept simple so the user can introduce different parameter values and/or experimental data to simulate the model.
 
 
 
 **Parameter_Estimation:**
-The subfolder provides the necessary code to perform the estimation of model parameters using the **MATLAB** optimization toolbox **AMIGO2**.
 
-**- Run_PE.m:** Main file to run parameter estimation using **AMIGO2**.
 
-**- Model_SubMIC_Carvacrol.m:** File to generate the mathematical model in **AMIGO2** standard.
+Folder with the necessary files to perform the estimation of model parameters using the **MATLAB** optimisation toolbox **AMIGO2**:
 
-**- PostProcess.m:** File to plot estimation results and postprocessing data.
+*- Run_PE.m:* Main script to run parameter estimation using **AMIGO2**. The user only needs to run the file *Run_PE.m* to perform the model calibration.
 
-**- Plot_ExpData.m:** File to plot experimental data.
+*- Model_SubMIC_Carvacrol.m:* Script to generate the mathematical model in **AMIGO2**.
 
-The user only needs to run the file **Run_PE.m** to perform the model calibration.
+*- PostProcess.m:* Script to plot and postprocesssing data.
+
+*- Plot_ExpData.m:* Script to plot the experimental data.
+
+*- Generated_data*: Folder with experimental data.
+
+*-Generated_results*: Folder to save the estimation results and figures.
+
+
 
 
 **Structural_Identifiability:**
-The subfolder provides the necessary code to perform a multi-experiment identifiability analysis of the mathematical model using the **MATLAB** toolbox **STRIKE-GOLDD**.
+
+Folder with the necessary code to perform a multi-experiment structural identifiability analysis of the mathematical model using the **MATLAB** toolbox **STRIKE-GOLDD**.
 
 
-**- z_create_Model_SubMIC_Carvacrol:** File with model definition in **STRIKE-GOLDD** standard.
+*- z_create_Model_SubMIC_Carvacrol:* Script to generate the mathematical model in **STRIKE-GOLDD**.
 
 
-**- options.m:** Options file of **STRIKE-GOLDD** with the necessary configurations to perform the multi-experiment structural identifiability analysis of the model.
+*- options.m:* Script with **STRIKE-GOLDD** options setting the necessary configurations to perform the multi-experiment structural identifiability analysis of the mathematical model.
 
 
-**- Model_SubMIC_Carvacrol.mat:** Data file containing the model generated when run **z_create_Model_SubMIC_Carvacrol**.
+*- Model_SubMIC_Carvacrol.mat:* File containing the model data generated when run **z_create_Model_SubMIC_Carvacrol**.
 
 
-To run the structural identifiability analysis, the user only needs to replace the default **options.m** file in the **MATLAB** toolbox **STRIKE-GOLDD** with the one provided in the repository, and move the data file **Model_SubMIC_Carvacrol.mat** to the folder **models** of **STRIKE-GOLDD**. 
+To run the multi-experiment structural identifiability analysis, the user only needs to replace the default **options.m** file in the **MATLAB** toolbox **STRIKE-GOLDD** with the one provided in the repository and move the data file *Model_SubMIC_Carvacrol.mat* to the folder *models* of **STRIKE-GOLDD** toolbox. 
 
 
