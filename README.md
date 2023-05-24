@@ -65,6 +65,6 @@ Folder with the necessary code to perform a multi-experiment structural identifi
 *- Model_SubMIC_Carvacrol.mat:* File containing the model data generated when run **z_create_Model_SubMIC_Carvacrol**.
 
 
-To run the multi-experiment structural identifiability analysis, the user only needs to replace the default **options.m** file in the **MATLAB** toolbox **STRIKE-GOLDD** with the one provided in the repository and move the data file *Model_SubMIC_Carvacrol.mat* to the folder *models* of **STRIKE-GOLDD** toolbox. 
+To run the multi-experiment structural identifiability analysis, the user only needs to replace the default **options.m** file in **STRIKE-GOLDD** with the one provided in the repository and move the data file *Model_SubMIC_Carvacrol.mat* to the folder *models* of **STRIKE-GOLDD**. 
 
 
