@@ -18,7 +18,7 @@ The repository **SubMIC_Carvacrol** contains the following subfolders:
 
 
 
-**-Simulations:**
+**- Simulations:**
 
 
 Folder with the necessary files to run model-based simulations:
@@ -31,7 +31,7 @@ The simulation code has been kept simple so the user can introduce different par
 
 
 
-**-Parameter_Estimation:**
+**- Parameter_Estimation:**
 
 
 Folder with the necessary files to perform the estimation of model parameters using the **MATLAB** optimisation toolbox **AMIGO2**:
@@ -51,7 +51,7 @@ Folder with the necessary files to perform the estimation of model parameters us
 
 
 
-**-Structural_Identifiability:**
+**- Structural_Identifiability:**
 
 Folder with the necessary code to perform a multi-experiment structural identifiability analysis of the mathematical model using the **MATLAB** toolbox **STRIKE-GOLDD**.
 
