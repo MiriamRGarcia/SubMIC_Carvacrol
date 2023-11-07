@@ -7,11 +7,11 @@
 h <- 0.01
 
 # Estimated parameter values (first component of array for B.Cereus and second component for E.Coli):
-mu_g0 <- c(2.8e00,2.9e00)
-mu_d0 <- c(1.7e-14,3.0e-02)
-k_S   <- c(1.6e-01,1.6e-01)
-k_g   <- c(5.4e-04,1.2e-03) 
-k_d   <- c(1.4e-01,1.3e-03)
+mu_g0 <- c(2.7673,2.8545)
+mu_d0 <- c(1.7591e-14,0.03046)
+k_S   <- c(0.15944,0.1626)
+k_g   <- c(0.00054077,0.0012016) 
+k_d   <- c(0.14245,0.0012745)
 
 ###
 
